@@ -1,4 +1,3 @@
-# TODO: CC and optflags
 Summary:	OpenOffice start acceleration applet for WindowMaker
 Summary(pl):	Aplet przyspieszaj±cy uruchamianie OpenOffice dla WindowMakera
 Name:		wmoo
@@ -29,8 +28,12 @@ wmsysmon jest dokowalnym apletem dla WindowMakera przyspieszaj±cym
 %patch0 -p1
 
 %build
-%{__make}
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_bindir}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -Wall"
+
+%install
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_bindir}}
 
 install icons/* $RPM_BUILD_ROOT%{_pixmapsdir}
 install wmoo $RPM_BUILD_ROOT%{_bindir}
