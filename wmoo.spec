@@ -10,7 +10,7 @@ Source0:	http://www.vampiera.net/download/%{name}-%{version}.tgz
 Patch0:		%{name}.patch
 URL:		http://www.vampiera.net/wmoo.html
 BuildRequires:	XFree86-devel
-BuildRequires:	libgtop-devel 
+BuildRequires:	libgtop-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -20,7 +20,7 @@ wmoo is WindowMaker dockable applet that can make OpenOffice start
 faster.
 
 %description -l pl
-wmsysmon jest dokowalnym apletem dla WindowMakera przyspieszaj±cym
+wmoo jest dokowalnym apletem dla WindowMakera przyspieszaj±cym
 ³adowanie OpenOffice.
 
 %prep
@@ -33,6 +33,7 @@ wmsysmon jest dokowalnym apletem dla WindowMakera przyspieszaj±cym
 	CFLAGS="%{rpmcflags} -Wall"
 
 %install
+rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_bindir}}
 
 install icons/* $RPM_BUILD_ROOT%{_pixmapsdir}
