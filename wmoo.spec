@@ -14,7 +14,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	libgtop-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 wmoo is WindowMaker dockable applet that can make OpenOffice start
