@@ -1,0 +1,65 @@
+diff -u /home/users/hunter/rpm/BUILD/wmoo-0.1/Makefile ./Makefile
+--- /home/users/hunter/rpm/BUILD/wmoo-0.1/Makefile	Thu May  2 01:27:51 2002
++++ ./Makefile	Sat Jun 29 21:18:25 2002
+@@ -14,11 +14,11 @@
+ # compilation and installation variables
+ CC      = gcc
+ CFLAGS  = -O2 -pedantic -Wall
+-INCDIR  = -I/usr/X11R6/include/X11 -I/usr/X11R6/include
++INCDIR  = -I/usr/X11R6/include/X11 -I/usr/X11R6/include -I /usr/X11R6/include/libgtop-1.0
+ LIBDIR  = -L/usr/X11R6/lib
+ DESTDIR = /usr/X11R6/bin
+ DOCDIR  = /usr/share/doc/wmoo
+-ICONDIR = /usr/share/icons/wmoo
++ICONDIR = /usr/X11R6/share/icons
+ 
+ # for linux
+ LIBS   = -lXpm -lX11 -lXext -lgtop -lgtop_common -lgtop_sysdeps -lXau
+diff -u /home/users/hunter/rpm/BUILD/wmoo-0.1/args.h ./args.h
+--- /home/users/hunter/rpm/BUILD/wmoo-0.1/args.h	Thu May  2 01:17:33 2002
++++ ./args.h	Sat Jun 29 21:19:28 2002
+@@ -27,8 +27,7 @@
+ 
+ /* defaults macros */
+ #define WMOORC ".wmoorc"
+-#define ICONPATH "/usr/share/icons/wmoo"
+-
++#define ICONPATH "/usr/X11R6/share/icons"
+ 
+ /* MACRO defining the path separator */
+ #define PATHSEP     ':'
+Only in /home/users/hunter/rpm/BUILD/wmoo-0.1/: dockapp.o
+Common subdirectories: /home/users/hunter/rpm/BUILD/wmoo-0.1/gifs and ./gifs
+Common subdirectories: /home/users/hunter/rpm/BUILD/wmoo-0.1/icons and ./icons
+Only in /home/users/hunter/rpm/BUILD/wmoo-0.1/: rcparser.o
+diff -u /home/users/hunter/rpm/BUILD/wmoo-0.1/sample.wmoorc ./sample.wmoorc
+--- /home/users/hunter/rpm/BUILD/wmoo-0.1/sample.wmoorc	Thu May  2 01:24:40 2002
++++ ./sample.wmoorc	Sat Jun 29 21:31:30 2002
+@@ -39,21 +39,21 @@
+ 
+ [quickstart]
+ icon = oo_logo.xpm
+-command = /usr/lib/office60/program/soffice -plugin -quickstart &
++command = /home/users/hunter/OpenOffice.org1.0/program/soffice -plugin -quickstart &
+ check = soffice.bin
+ 
+ [swriter]
+ icon = oo_swriter.xpm
+-command = /usr/lib/office60/program/soffice private:factory/swriter &
++command = /home/users/hunter/OpenOffice.org1.0/program/soffice private:factory/swriter &
+ 
+ [scalc]
+ icon = oo_scalc.xpm
+-command = /usr/lib/office60/program/soffice private:factory/scalc &
++command = /home/users/hunter/OpenOffice.org1.0/program/soffice private:factory/scalc &
+ 
+ [simpress]
+ icon = oo_simpress.xpm
+-command = /usr/lib/office60/program/soffice private:factory/simpress &
++command = /home/users/hunter/OpenOffice.org1.0/program/soffice private:factory/simpress &
+ 
+ [sdraw]
+ icon = oo_sdraw.xpm
+-command = /usr/lib/office60/program/soffice private:factory/sdraw &
++command = /home/users/hunter/OpenOffice.org1.0/program/soffice private:factory/sdraw &
+Only in /home/users/hunter/rpm/BUILD/wmoo-0.1/: xpmbutton.o
