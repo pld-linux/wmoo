@@ -4,7 +4,7 @@ Name:		wmoo
 Version:	0.1
 Release:	1
 License:	GPL
-Vendor:		Piera "Vampiera" Poggio piera@metodo.net
+Vendor:		Piera "Vampiera" Poggio <piera@metodo.net>
 Group:		X11/Window Managers/Tools
 Source0:	http://www.vampiera.net/download/%{name}-%{version}.tgz
 Patch0:		%{name}.patch
