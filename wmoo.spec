@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Piera "Vampiera" Poggio <piera@metodo.net>
 Group:		X11/Window Managers/Tools
 Source0:	http://www.vampiera.net/download/%{name}-%{version}.tgz
+# Source0-md5:	1a3a53ae3e76731746dabd4a5ab9f481
 Patch0:		%{name}.patch
 URL:		http://www.vampiera.net/wmoo.html
 BuildRequires:	XFree86-devel
