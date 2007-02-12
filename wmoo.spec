@@ -1,5 +1,5 @@
 Summary:	OpenOffice start acceleration applet for WindowMaker
-Summary(pl):	Aplet przyspieszaj±cy uruchamianie OpenOffice dla WindowMakera
+Summary(pl.UTF-8):   Aplet przyspieszajÄ…cy uruchamianie OpenOffice dla WindowMakera
 Name:		wmoo
 Version:	0.1
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmoo is WindowMaker dockable applet that can make OpenOffice start
 faster.
 
-%description -l pl
-wmoo jest dokowalnym apletem dla WindowMakera przyspieszaj±cym
-³adowanie OpenOffice.
+%description -l pl.UTF-8
+wmoo jest dokowalnym apletem dla WindowMakera przyspieszajÄ…cym
+Å‚adowanie OpenOffice.
 
 %prep
 %setup -q
