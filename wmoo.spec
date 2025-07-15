@@ -25,7 +25,7 @@ wmoo jest dokowalnym apletem dla WindowMakera przyspieszającym
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
